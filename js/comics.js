@@ -4,6 +4,9 @@ $(document).ready(function(){
   getComic("http://www.gocomics.com/garfield");
   getGroup();
   $(".more").click(getGroup);
+  setTimeout(function(){
+    $("#ribbon").fadeOut( "slow" );
+  },5000);
 });
 
 function getGroup(){
